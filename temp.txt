@@ -27,3 +27,4 @@ git status
 
 Adding Feature1
 Adding Feature2
+Adding Feature4
