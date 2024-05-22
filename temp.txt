@@ -1,0 +1,25 @@
+git cherry-pick -> normal commit ,  merge commit 
+git revert 
+git rebase --onto 
+git rebase -i
+    squash
+    drop
+    pick
+    amend
+git pull  
+git reset --hard 
+git reset --soft 
+git log 
+git refLog 
+git push -f 
+git push -u
+git checkout -b
+git checkout 
+git commit -m
+git push
+git pull
+git merge 
+git cherry-pick 
+git branch -m
+git branch -d
+git status
