@@ -1,3 +1,8 @@
+function doNothing() {}
+console.log(doNothing() === undefined); // true
+
+//Note: objects and arrays are passed by references otherwise pass by value
+
 let user = {
     name: "Sarthak",
     age: 20,
