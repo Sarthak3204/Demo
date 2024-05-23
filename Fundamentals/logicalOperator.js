@@ -16,4 +16,3 @@ true && console.log("running");
 
 //The precedence of AND && operator is higher than OR ||
 //!! Converting a value to boolean type
-

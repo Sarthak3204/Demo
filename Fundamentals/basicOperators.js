@@ -8,7 +8,7 @@ console.log(6 - "2"); // 4
 
 let x = "2";
 let y = "3";
-console.log(x+ y); // 23
+console.log(x + y); // 23
 console.log(+x + +y); // 5
 
 // Pre and Post increment operator, bitwise

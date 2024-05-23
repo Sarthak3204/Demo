@@ -3,7 +3,7 @@ let user = {
     age: 20,
 };
   
-//for in loops through the properties of an obect
+//for in loops through the properties of an object
 for (let key in user) {
     console.log(key); 
     console.log(user[key]); 
