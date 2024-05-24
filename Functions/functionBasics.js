@@ -1,4 +1,4 @@
-function doNothing() {}
+function doNothing() { }
 console.log(doNothing() === undefined); // true
 
 //Note: objects and arrays are passed by references otherwise pass by value
@@ -6,7 +6,7 @@ console.log(doNothing() === undefined); // true
 let user = {
     name: "Sarthak",
     age: 20,
-    printName: function() {
+    printName: function () {
         console.log(this.name);
     }
 }
@@ -55,10 +55,10 @@ const arrCopy = [...arr];
 //counter object
 function Counter(initial) {
     let cnt = initial;
-    this.up = function() {
+    this.up = function () {
         return ++cnt;
     };
-    this.down = function() {
+    this.down = function () {
         return --cnt;
     };
 }
@@ -67,6 +67,32 @@ let counter = new Counter(0);
 console.log(counter.up());
 
 //IIFE
-(function() {
+(function () {
     console.log("hello");
 })();
+
+//examples
+const arr2 = [1, 2, 2, 3, 4, 4, 5, 6];
+function inBetween(a, b) {
+    return x => x >= a && x <= b;
+}
+
+function inArray(arr) {
+    return x => arr.includes(x);
+}
+
+console.log(arr2.filter(inBetween(3, 6))); // [ 3, 4, 4, 5, 6 ]
+console.log(arr2.filter(inArray([1, 2, 10]))); // [ 1, 2, 2 ]
+
+let users = [
+    { name: "John", age: 20, surname: "Johnson" },
+    { name: "Pete", age: 18, surname: "Peterson" },
+    { name: "Ann", age: 19, surname: "Hathaway" }
+];
+
+function byField(fieldName) {
+    return (lhs, rhs) => lhs[fieldName] < rhs[fieldName] ? -1 : 1;
+}
+
+users.sort(byField("age"));
+console.log(users);
